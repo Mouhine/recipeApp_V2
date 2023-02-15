@@ -16,7 +16,7 @@ const Cuisin = () => {
   return (
     <div className=" mt-[80px] max-w-5xl mx-auto w-[90%]  ">
       <Banner cuisine={cuisin as string} />
-      <section className="grid grid-cols-4 gap-3 max-h-[80vh] overflow-y-scroll scrollbar-hide ">
+      <section className="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 gap-3 max-h-[80vh] overflow-y-scroll scrollbar-hide ">
         {recipes.map((recipe, i) => {
           return <RecipeCard recipe={recipe} key={recipe.id} />;
         })}

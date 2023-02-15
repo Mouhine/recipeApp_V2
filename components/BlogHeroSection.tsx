@@ -5,7 +5,7 @@ interface HeroBlog {
 }
 const BlogHeroSection = ({ blog }: HeroBlog) => {
   return (
-    <div className=" hidden lg:block md:col-span-2 lg:col-span-3 space-y-2">
+    <div className="  lg:block md:col-span-2 lg:col-span-3 space-y-2">
       <div>
         <img src={blog?.media} alt="" className="rounded-lg" />
       </div>
