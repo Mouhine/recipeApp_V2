@@ -86,7 +86,7 @@ const Search = () => {
             {DIETS.map((d, i) => {
               return (
                 <li
-                  className="py-1 px-4 rounded border bg-white my-1 "
+                  className="py-1 px-4 rounded border bg-white my-1 transition-transform delay-100 hover:scale-110 "
                   onClick={() => {
                     setLoading(true);
                     getRecipeByDiet(d.name, setRecipes).then(() =>
@@ -108,7 +108,7 @@ const Search = () => {
             {CUISINS.map((c, i) => {
               return (
                 <section
-                  className="flex items-center space-x-2  cursor-pointer border rounded w-full px-1 py-1 "
+                  className="flex items-center space-x-2  cursor-pointer border rounded w-full px-1 py-1 transition-transform delay-100 hover:scale-110 "
                   onClick={() => {
                     setLoading(true);
                     getRecipeByCuisin(c.tag, setRecipes).then(() =>

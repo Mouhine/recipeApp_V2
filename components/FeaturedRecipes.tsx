@@ -17,7 +17,7 @@ const FeaturedRecipes = () => {
         <h1 className="text-xl">
           Featured <span className="text-[#e66337]"> Recipes</span>
         </h1>
-        <Link href={"/search"}>
+        <Link href={"/Search"}>
           <button className="bg-[#e66337] px-6 py-2 rounded-full font-medium text-white">
             View More
           </button>

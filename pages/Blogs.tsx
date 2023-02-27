@@ -15,6 +15,7 @@ const Blogs = () => {
           return (
             <Link
               href={b.link}
+              target="_blank"
               className="lg:col-span-4 md:col-span-6 col-span-12"
             >
               <div className="border p-4 rounded-lg ">

@@ -8,13 +8,13 @@ const RecipeCard = ({ recipe }: { recipe: Recipe }) => {
   return (
     <Link href={`/recipe/${recipe.id}`}>
       <div className=" rounded-lg p-2  ">
-        <div className="border rounded-lg relative ">
+        <div className="border rounded-lg relative overflow-hidden ">
           <img
             src={recipe?.image || IMG}
             alt=""
-            className="w-full h-full object-fill rounded-lg"
+            className="w-full h-full object-fill rounded-lg hover:scale-110 "
           />
-          <div className="bg-black/50 rounded-lg absolute inset-0 h-full w-full  "></div>
+          <div className="bg-black/25 rounded-lg absolute inset-0 h-full w-full  "></div>
           <h2 className=" absolute top-5 px-4 text-white py-3 font-semibold text-lg">
             {recipe?.title}
           </h2>
